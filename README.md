@@ -1,4 +1,4 @@
-Challenge for Fullstack Developer
+Challenge for Frontend Developers
 ===============================
 
 To better assess a candidate's development skills, we would like to provide the following challenge. 
