@@ -23,9 +23,13 @@ Project description
 We want to develop a small web app that allows users to order pizza.
 
 This client should load and show all pizzas from example-pizzas.json including the ingredients and prices.
+
 The user can select pizzas.
+
 When the user chooses something from the list the order summary will update dynamically.
+
 There will be a button to confirm the order. Store the order on client side and the result will be displayed as a message like this: "Your order is confirmed. Order summary: ...".
+
 Ensure that the interface is usable on mobile devices as well as on desktop screens.
 
 
