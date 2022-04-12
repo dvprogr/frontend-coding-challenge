@@ -2,18 +2,21 @@
     position: fixed;
     z-index: 1;
     display: flex;
-    left: 39%;
-    top:30%;
+    left: 50%;
+    transform: translateX(-50%);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-width: 5px;
     border-color: black;
     background-color: brown;
+    color: white;
     width: 400px;
     height: 500px;
     margin-top: 15px;
 }
+
+
 
 .items {
     overflow-y: scroll;
@@ -25,6 +28,8 @@
     flex-direction: row;
     height: 30px;
     align-items: center;
+    justify-content: space-evenly;
     border-radius: 15px;
     border-color: black;
+    width: 100%;
 }
