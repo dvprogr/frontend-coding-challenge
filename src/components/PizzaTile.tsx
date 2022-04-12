@@ -18,8 +18,8 @@ const PizzaTile = (props) => {
       <h3 className="ingredientsTitle">Ingredients</h3>
 
       <div className="ingredients">
-        {ingredients.map((i) => (
-          <p className="ingredientItem">{i}</p>
+        {ingredients.map((i, key) => (
+          <p key={key} className="ingredientItem">{i}</p>
         ))}
       </div>
 

@@ -1,0 +1,30 @@
+.cart-active {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    left: 39%;
+    top:30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 5px;
+    border-color: black;
+    background-color: brown;
+    width: 400px;
+    height: 500px;
+    margin-top: 15px;
+}
+
+.items {
+    overflow-y: scroll;
+    width: 400px;
+}
+
+.cart-header {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    align-items: center;
+    border-radius: 15px;
+    border-color: black;
+}
