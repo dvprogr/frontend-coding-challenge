@@ -16,8 +16,11 @@ function App() {
   return (
     <div className="App">
       <h1>Order pizza</h1>
-      <p>Orders: {orders?.length > 0 ? orders : "Currently no orders"}</p>
-      <p>Total: {total}</p>
+      <div>
+        <p>Orders: {orders?.length > 0 ? orders.map(x => <p>{x}</p>) : "Currently no orders"}</p>
+        <p>Total: {total}</p>
+      </div>
+
       <div className="pizzaItems">
         {examplePizzas.map((x, key) => (
           <PizzaTile pizza={x} index={key} onItemOrder={onItemOrder} />
