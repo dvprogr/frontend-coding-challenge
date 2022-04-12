@@ -2,8 +2,13 @@ import React from "react";
 import "./PizzaTile.css";
 
 const PizzaTile = (props) => {
-  const {pizza, onItemOrder, key} = props;
+  const { pizza, onItemOrder, index } = props;
   const ingredients = pizza.ingredients;
+
+  const onOrder = () => {
+    onItemOrder(index);
+  };
+
   return (
     <div className="pizzaTile">
       <div className="row">
@@ -18,7 +23,7 @@ const PizzaTile = (props) => {
         ))}
       </div>
 
-      <button onClick={(key) => onItemOrder(key)}>Add to cart</button>
+      <button onClick={onOrder}>Add to cart</button>
     </div>
   );
 };
