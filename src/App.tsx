@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import "./App.css";
+import examplePizzas from "./example-pizzas.json";
+import PizzaTile from "./components/PizzaTile.tsx";
 
 function App() {
+  const [orders, setOrders] = useState([]);
+
+  const onItemOrder = (key) => {
+    console.log("order item key: ", key)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Order pizza</h1>
+      <p>Orders: {orders?.length > 0 ? orders : "Currently no orders"}</p>
+      <div className="pizzaItems">
+        {examplePizzas.map((x, key) => (
+          <PizzaTile pizza={x} key={key} onItemOrder={onItemOrder} />
+        ))}
+      </div>
+
     </div>
   );
 }

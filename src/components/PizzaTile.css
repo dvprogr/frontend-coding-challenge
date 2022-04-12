@@ -1,0 +1,35 @@
+.pizzaTile {
+    background-color: gray;
+    width: 400px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: aqua;
+    padding: 15px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    border-width: 20;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.ingredients {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+.ingredientItem {
+    margin-right: 10px;
+    background-color: rgb(26, 173, 218);
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.ingredientsTitle {
+    text-align: start;
+}
